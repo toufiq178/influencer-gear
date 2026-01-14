@@ -1,11 +1,24 @@
 /* shared styles */
 
 :root {
-    --primary-color:#3A3A3A;
-    --secondary-color:#E02C6D;
+    --primary-color: #3A3A3A;
+    --secondary-color: #E02C6D;
 }
-.display-flex{
+
+.display-flex {
     display: flex;
+}
+
+.btn-primary {
+    border-radius: 41px;
+    border: none;
+    background-color: var(--secondary-color);
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    gap: 8px;
+    padding: 10px 24px;
+    align-items: center;
 }
 
 
@@ -15,46 +28,115 @@
 
 /* navbar related styles */
 
-.navbar{
+.navbar {
     max-width: 1200px;
     margin: 87px auto;
     justify-content: space-between;
     align-items: center;
 }
-.navbar-tittle{
+
+.navbar-tittle {
     color: var(--primary-color);
     font-size: 1.5rem;
     font-weight: 700;
 
 }
-.nav-link-content{
+
+.nav-link-content {
     list-style: none;
     align-items: center;
     gap: 34px;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 600;
 }
 
+/* <!-- hero related styles start --> */
+.hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 131px;
+}
+
+.hero-title {
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0px;
+}
+
+.hero-description {
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: 505px;
+    width: 100%;
+    color: var(--primary-color);
+}
+
+.hero-img-container {
+
+    max-width: 465px;
+    width: 100%;
+    background-image: url('./images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.hero-img-container img{
+    width: 100%;
+}
 
 
 /* make responsive mobile device */
 @media screen and (max-width:576px) {
-    
 
-    .display-flex{
+
+    .navbar , .nav-link-content {
         flex-direction: column;
         align-items: center;
     }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .hero-description {
+        font-weight: 500;
+        
+    }
+    
+
 }
 
 /* make responsive for tab device */
 @media screen and (min-width:576px) and (max-width:992px) {
 
-    .navbar{
+    .navbar {
         flex-direction: column;
     }
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        gap: 32px;
+    }
+    .hero-description{
+        max-width: 505px;
+        margin: 30px auto;
+
+    }
     
+
 }
