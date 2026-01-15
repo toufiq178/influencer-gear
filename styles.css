@@ -1,4 +1,7 @@
 /* shared styles */
+* {
+    margin: 0;
+}
 
 :root {
     --primary-color: #3A3A3A;
@@ -232,6 +235,47 @@
 .join-now {
     border: none;
     border-radius: 0px;
+}
+
+footer {
+
+    background-color: #0A0826;
+    margin: 0;
+}
+
+.influencer {
+    padding: 50px 0;
+}
+
+.influencer-container {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.influencer-tittle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.copyright-text {
+    font-weight: 700;
+    color: #D9DBE1;
+
+    font-size: 0.9rem;
+
+}
+
+.social-link-container {
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.item-links {
+    list-style: none;
 }
 
 /* make responsive mobile device */
